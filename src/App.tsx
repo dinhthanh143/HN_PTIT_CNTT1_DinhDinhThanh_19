@@ -19,9 +19,10 @@ function App() {
         <Ex6/>
         <Ex7/>
         <Ex8/>
+        
       </div>
     </>
   );
 }
-
+//bai 8 tk mk admin 123abc
 export default App;
