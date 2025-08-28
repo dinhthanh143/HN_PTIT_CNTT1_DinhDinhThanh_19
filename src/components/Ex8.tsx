@@ -51,8 +51,10 @@ export const Ex8 = () => {
     setTimeout(() => {
       if (inputTemp.username === "" || inputTemp.password === "") {
         dispatch({ type: "Error" });
-      } else {
+      } else if (inputTemp.username === "admin" && inputTemp.password === "123abc") {
         dispatch({ type: "Success" });
+      }else{
+   dispatch({ type: "Error" });
       }
     }, 2000);
     setTimeout(() => {
@@ -106,3 +108,4 @@ export const Ex8 = () => {
     </div>
   );
 };
+
